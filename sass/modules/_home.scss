@@ -1,0 +1,132 @@
+#logo {
+  width: 69%;
+  display: block;
+  margin: 4rem auto;
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    width: 19%;
+  }
+}
+
+#band {
+  width: 82%;
+  display: block;
+  margin: 4rem auto;
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    width: 36%;
+    margin-bottom: 2rem;
+  }
+}
+
+#no_edu {
+  margin: 4rem;
+  text-align: center;
+  font-size: 2.4rem;
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 3rem;
+  }
+}
+
+#favourite {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.album_cover {
+  width: 73%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 9rem;
+  margin-top: 1rem;
+}
+
+.album-name {
+  text-align: center;
+  font-size: 2rem;
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 3rem;
+  }
+}
+
+#copyright {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 3rem;
+}
+
+.scroll-downs {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-bottom: 9rem;
+  width: 34px;
+  height: 55px;
+  display: none;
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+
+#bckgrd_logo {
+  position: absolute;
+  top: 69%;
+  left: 11%;
+  opacity: 0.1;
+  z-index: -1;
+}

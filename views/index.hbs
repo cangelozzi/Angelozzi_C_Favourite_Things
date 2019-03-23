@@ -1,0 +1,19 @@
+<img src="/images/PF_them.jpg" alt="Pink Floyd band" id="band">
+<p id="no_edu">"...We don't need no education..." ?</p>
+
+<div class="scroll-downs">
+  <div class="mousey">
+    <div class="scroller"></div>
+  </div>
+</div>
+
+<section id="favourite">
+
+  {{#each albums}}
+  <div class="album">
+    <h2 class="album-name">{{album_name}}</h2>
+    <a href="/{{link}}"><img src="/images/{{album_img}}" alt="album cover" class="album_cover"></a>
+  </div>
+  {{/each}}
+
+</section>
